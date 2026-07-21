@@ -1,0 +1,50 @@
+package variable;
+
+public class DataType {
+
+	public static void main(String[] args) {
+		// 정수타입 : 기본 타입 int, long
+		int four = 100; //4byte
+		long fourD = 100; //8byte
+
+		
+		//100010001000100 4byte로도 표현 불가능한 가눙치의 정수임 -4byte로 표현하려고 해서 오류가 발생
+		//4byte 표현하지 말고 8byte로 처리하도록 l/L 추가해야 함
+		long longValue = 100010001000100L;
+		System.out.println(longValue);System.out.println(four);
+		System.out.println("================================");
+		
+		
+		
+		
+		//문자타입 변수 선언
+		char a = 'A'; //문자A
+		char b = '\u0041';//문자A의 유니코드 값
+		char c = 65; // 문자A의 아스키코드값
+		
+		System.out.println(a); System.out.println(b); System.out.println(c);
+		System.out.println("================================");
+		
+		//실수 타입: 소수점이 있는 실수값을 저장하기 위한 타입
+		//float(4byte) / double(8byte) -> 실수의 기본 타입
+		//기본타입은 리터럴을 표현할 때 준비하는 크기를 의미함
+		//double이 기본타입이므로 리터럴은 8byte로 처리됨
+		double avg = 88.5; //8byte 리터럴을 8byte 변수에 대입(동일크기이므로 문제 없음)
+		//float avg1 = 88.5; // 8byte 리터럴을 4byte 변수에 대입(큰 타입을 작은타입에 넣어서 문제가 생김)
+		float avg2 = 88.5f; //실수 리터럴 8byte가 아닌 4byte로 처리 후 4byte 변수에 대입(오류 없이 처리)
+		
+		double doubleValue = 0.1234567890123456789;
+		float floatValue = 0.1234567890123456789f;
+		
+		System.out.println("doubleValue:"+doubleValue); // double 타입이 더 정밀함
+		System.out.println("floatValue:"+floatValue);
+		
+		//실수의 지수 표현
+		System.out.println("================================");
+	    
+		int var1 = 3000000;
+		double var2 = 3000000;
+		double var3 = 3e6;
+	}
+
+}
