@@ -49,7 +49,11 @@ public class IfElse {
 			grade = 'F';
 		
 		System.out.println("성적:" + grade);
-		sc.close();
+		
+		
+		//중첩 if : 특별한 기능은 아니고 코드 구조를 의미
+		score = sc.nextInt();
+		String grade1;
 
 	}
 
