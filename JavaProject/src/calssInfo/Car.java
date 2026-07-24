@@ -10,5 +10,8 @@ public final class Car {
 	int carCc;
 	
 	//메소드 : 객체를 통해 어디서든 접근 가능(public), 반환값 없음: void
+	public void showCarInfo() {
+		System.out.println("차량번호:"+carNo);
+	}
 
 }
